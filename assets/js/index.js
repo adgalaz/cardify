@@ -5,7 +5,7 @@ $(document).ready(function() {
 /*
 * Agregando elementos html <figure> y <figcaption>
 */
-var addTags = (function() {
+let addTags = (function() {
 /*
 * envuelve las imagenes en un elemento figure
 */
