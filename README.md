@@ -1,54 +1,46 @@
-# Cardify
+# Proyecto Cardify2.0
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Cardify2.0 es un Plugin de jQuery que dado un contenedor busca todas las imágenes que encuentra dentro del contenedor y las reemplaza por un nuevo elemento <figure> que contiene la imagen <img> además de un <figcaption> con el texto del atributo alt de la imagen.
+  Además agregamos diferentes efectos en las imagenes al hace hover.
 
-***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+# Metodología de trabajo
 
-## Flujo de trabajo
+* Se utilizó Trello como herramienta de planificación, donde creamos diferentes tableros según la necesidad, uno de lluvia de ideas, otro para planificar los pasos a seguir.
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+* Como herramienta de comunicación utilizamos Slack y Whatsapp para poder mantener la comunicación y que el trabajo remoto no sea un problema.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+# Requerimientos Técnicos
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+## Dependencias de Producción
+* JQuery v3.2.1
+* Bootstrap v4.0.0-alpha.6
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+# Instalación
 
-***
+## Global (navegador)
 
-## Instalación
-
-### Global (navegador)
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="path-to-cardify.js"></script>
 ```
 
-## Uso
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
+# Uso
+
+```// container es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
 $(container).cardify({});
 ```
+# Diario del proceso
 
-## Ejemplos
+## Semana 1
 
-...
+* creación del equipo
+* definir que reto va a ser realizado
+* forkeo del repositorio de muestra, clonación y creación del readme
+
+# Autores
+
+* Andrea
+* Sabrina
