@@ -1,7 +1,3 @@
-
-  if (typeof window === 'undefined') return;
-
-
 $(document).ready(function() {
   $('.imgwrap').cardify({});
 });
@@ -22,4 +18,3 @@ $('img').wrap('<figure class="alt-text"/>');
   };
 
 })(jQuery);
-
