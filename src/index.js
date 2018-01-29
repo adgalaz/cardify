@@ -1,9 +1,10 @@
+const $ = require("jquery");
 $(document).ready(function() {
   $('.imgwrap').cardify({});
 });
 
 (function ($){
-  jQuery.fn.cardify = function() {
+  $.fn.cardify = function() {
 /*
 * envuelve las imagenes en un elemento figure
 */
@@ -17,4 +18,4 @@ $('img').wrap('<figure class="alt-text"/>');
 
   };
 
-})(jQuery);
+})($);
