@@ -1,6 +1,6 @@
 # Proyecto Cardify2.0
 
-Cardify2.0 es un Plugin de jQuery que dado un contenedor busca todas las imágenes que encuentra dentro del contenedor y las reemplaza por un nuevo elemento <figure> que contiene la imagen <img> además de un <figcaption> con el texto del atributo alt de la imagen.
+Cardify2.0 es un Plugin de jQuery que busca todas las imágenes que encuentran dentro de un contenedor y las reemplaza por un nuevo elemento <figure> que contiene la imagen <img> además de un <figcaption> con el texto del atributo alt de la imagen.
   Además agregamos diferentes efectos en las imagenes al hace hover.
 
 
@@ -16,6 +16,11 @@ Cardify2.0 es un Plugin de jQuery que dado un contenedor busca todas las imágen
 ## Dependencias de Producción
 * JQuery v3.2.1
 * Bootstrap v4.0.0-alpha.6
+
+## Dependencias de Desarrollo
+* Mocha v5.0.0
+* Chai v4.1.2
+* JSDom v11.6.1
 
 # Instalación
 
@@ -44,3 +49,7 @@ $(container).cardify({});
 
 * Andrea
 * Sabrina
+
+#Licencia
+
+* ISC License
