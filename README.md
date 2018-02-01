@@ -1,54 +1,88 @@
-# Cardify
+# Proyecto Cardify2.0
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tus imagenes. Este plugin busca todas las imágenes que se encuentran dentro de un contenedor y las reemplaza con un nuevo elemento ```<figure>``` que contiene la/s imagen/es (```<img>```), así como un ```<figcaption>``` con el texto del atributo "alt" de la imagen.
 
-***
+# Requerimientos Técnicos
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+## Dependencias de Producción
+* JQuery v3.2.1
+* Bootstrap v4.0.0-alpha.6
 
-## Flujo de trabajo
+## Dependencias de Desarrollo
+* Mocha v5.0.0
+* Chai v4.1.2
+* JSDom v11.6.1
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+# Instalación
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+## Local
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+1. Agrega jQuery a tu proyecto
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
-
-***
-
-## Instalación
-
-### Global (navegador)
-
-```html
+```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
 ```
 
-## Uso
+2. Agrega el archivo main.css a tu carpeta css, escribiendo la ruta correcta en tu html.
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+```
+<link rel="stylesheet" href="path-to-main.css">
 ```
 
-## Ejemplos
+3. Agrega el archivo index.js a tu carpeta js, escribiendo la ruta correcta en tu html.
 
-...
+```
+<script src="path-to-index.js"></script>
+```
+
+4. Agrega un container en tu html con la clase "imgwrap"
+
+```
+<div class="imgwrap"><img src="path-to-image.jpg" alt="my image"></div>
+```
+
+# Uso
+
+* El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js. 
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <title>Your web</title>
+  <!--add main.css file-->
+  <link rel="stylesheet" href="path-to-main.css">
+</head>
+
+<body>
+
+    <div class="container">
+      <!--add div with class="imgwrap"-->
+      <div class="row imgwrap">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <!--add your image file-->
+          <img class="img-fluid" src="path-to-image.jpg" alt="My Image">
+        </div>
+      </div>
+    </div>
+
+  <!--add jQuery and index.js files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="path-to-index.js"></script>
+  
+</body>
+
+</html>
+```
+
+# Autores
+
+* Andrea Diaz
+* Sabrina Villalobos
+
+# Licencia
+
+* ISC License
