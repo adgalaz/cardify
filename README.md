@@ -1,54 +1,110 @@
-# Cardify
+# Proyecto Cardify2.0
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Cardify2.0 es un Plugin de jQuery que agrega un simple efecto de hover a tus imagenes. Al agregarlo a tu proyecto busca todas las imágenes que se encuentran dentro de un contenedor y las reemplaza por un nuevo elemento <figure> que contiene la imagen <img> además de un <figcaption> que contine un alt con un texto sobre la imagen.
+Al hacer hover aparece al pie de la imagen el texto incluido en el alt de la imagen.
 
-***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+# Requerimientos Técnicos
 
-## Flujo de trabajo
+## Dependencias de Producción
+* JQuery v3.2.1
+* Bootstrap v4.0.0-alpha.6
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+## Dependencias de Desarrollo
+* Mocha v5.0.0
+* Chai v4.1.2
+* JSDom v11.6.1
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+# Instalación
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+## Local
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+1. Agrega jquery a tu proyecto
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
-
-***
-
-## Instalación
-
-### Global (navegador)
-
-```html
+```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
+
+2. Agrega el archivo cardify.css a tu proyecto, escribiendo la ruta correcta en tu html.
+
+```
+<link rel="stylesheet" href="path-to-cardify.css">
+```
+
+3. Agrega el archivo cardify.js a tu proyecto, escribiendo la ruta correcta en tu html.
+
+```
 <script src="path-to-cardify.js"></script>
 ```
 
-## Uso
+4. Agrega un container en tu html con la clase "imgwrap"
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+```
+<div class="imgwrap"><img src="path-to-image.jpg" alt="my image"></div>
 ```
 
-## Ejemplos
+## Global (navegador)
 
-...
+1. Agrega jquery a tu proyecto
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
+
+2. Agrega los links de CDN en tu proyecto.
+
+```
+<link rel="stylesheet" href="https://cdn.rawgit.com/adgalaz/cardify/heidi/assets/css/cardify.css">
+```
+
+```
+<script src="https://cdn.rawgit.com/adgalaz/cardify/heidi/src/cardify.js"></script>
+```
+
+# Uso
+
+* El usuario puede instalar el plugin de dos maneras. 
+- De manera local descargando los archivos cardify.css y cardify.js directamente desde github y agregandolas a sus carpetas de proyecto css y js. 
+- De manera global puede hacerlo a traves de CDN agregando a su proyecto el link y script que corresponden.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>Your web</title>
+    <!--add cardify.css file-->
+    <link rel="stylesheet" href="path-to-cardify.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!--add div with class="imgwrap"-->
+        <div class="row imgwrap">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <!--add your image file-->
+                <img class="img-fluid" src="path-to-image.jpg" alt="My Image">
+            </div>
+        </div>
+    </div>
+
+    <!--add jQuery and cardify.js files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="path-to-cardify.js"></script>
+
+</body>
+
+</html>
+```
+
+# Autores
+
+* Andrea
+* Sabrina
+
+#Licencia
+
+* ISC License
