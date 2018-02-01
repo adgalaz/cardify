@@ -46,6 +46,7 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 ```
 <div class="imgwrap"><img class="imgCardify" src="path-to-image.jpg" alt="my image"></div>
 ```
+
 # Uso
 
 * El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js.
