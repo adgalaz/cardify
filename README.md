@@ -1,15 +1,6 @@
 # Proyecto Cardify2.0
 
-Cardify2.0 es un Plugin de jQuery que dado un contenedor busca todas las imágenes que encuentra dentro del contenedor y las reemplaza por un nuevo elemento <figure> que contiene la imagen <img> además de un <figcaption> con el texto del atributo alt de la imagen.
-  Además agregamos diferentes efectos en las imagenes al hace hover.
-
-
-# Metodología de trabajo
-
-* Se utilizó Trello como herramienta de planificación, donde creamos diferentes tableros según la necesidad, uno de lluvia de ideas, otro para planificar los pasos a seguir.
-
-* Como herramienta de comunicación utilizamos Slack y Whatsapp para poder mantener la comunicación y que el trabajo remoto no sea un problema.
-
+Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tus imagenes. Este plugin busca todas las imágenes con clase (```imgCardify```) dentro de un contenedor y las reemplaza con un nuevo elemento ```<figure>``` que contiene la/s imagen/es (```<img>```), así como un ```<figcaption>``` con el texto del atributo "alt" de la imagen.
 
 # Requerimientos Técnicos
 
@@ -17,30 +8,86 @@ Cardify2.0 es un Plugin de jQuery que dado un contenedor busca todas las imágen
 * JQuery v3.2.1
 * Bootstrap v4.0.0-alpha.6
 
+## Dependencias de Desarrollo
+* Mocha v5.0.0
+* Chai v4.1.2
+* JSDom v11.6.1
+
 # Instalación
 
-## Global (navegador)
+## Local
 
-```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+1. Agrega jQuery a tu proyecto
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 
+2. Agrega el archivo main.css a tu carpeta css, escribiendo la ruta correcta en tu html.
 
+```
+<link rel="stylesheet" href="path-to-main.css">
+```
+
+3. Agrega el archivo index.js a tu carpeta js, escribiendo la ruta correcta en tu html.
+
+```
+<script src="path-to-index.js"></script>
+```
+
+4. Agrega un container en tu html con la clase "imgwrap"
+
+```
+<div class="imgwrap"><img class="imgCardify" src="path-to-image.jpg" alt="my image"></div>
+```
+
+5. Agrega imagenes en tu html con la clase "imgCardify"
+
+```
+<div class="imgwrap"><img class="imgCardify" src="path-to-image.jpg" alt="my image"></div>
+```
 # Uso
 
-```// container es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+* El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js.
+
 ```
-# Diario del proceso
+<!DOCTYPE html>
+<html lang="en">
 
-## Semana 1
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <title>Your web</title>
+  <!--add main.css file-->
+  <link rel="stylesheet" href="path-to-main.css">
+</head>
 
-* creación del equipo
-* definir que reto va a ser realizado
-* forkeo del repositorio de muestra, clonación y creación del readme
+<body>
+
+    <div class="container">
+      <!--add div with class="imgwrap"-->
+      <div class="row imgwrap">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <!--add your image file-->
+          <img class="img-fluid imgCardify" src="path-to-image.jpg" alt="My Image">
+        </div>
+      </div>
+    </div>
+
+  <!--add jQuery and index.js files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="path-to-index.js"></script>
+  
+</body>
+
+</html>
+```
 
 # Autores
 
-* Andrea
-* Sabrina
+* Andrea Diaz
+* Sabrina Villalobos
+
+# Licencia
+
+* ISC License
