@@ -83,6 +83,6 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 * Andrea Diaz
 * Sabrina Villalobos
 
-#Licencia
+# Licencia
 
 * ISC License
