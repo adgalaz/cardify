@@ -14,7 +14,7 @@
   color: #fff;
   }
 
-figcaption {
+.down {
   position: absolute;
   opacity: 0;
   left: 0;
@@ -27,6 +27,20 @@ figcaption {
   background-color: rgba(0,0,0,0.8);
   }
 
-.alt-text:hover > figcaption.alt {
+.alt-text:hover > figcaption.down {
   opacity: 1;
   }
+
+.up {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: rgba(0,0,0,0.8);
+  }
+}
