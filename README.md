@@ -23,16 +23,16 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
 
-2. Agrega el archivo cardify.css a tu carpeta css, escribiendo la ruta correcta en tu html.
+2. Agrega el archivo main.css a tu carpeta css, escribiendo la ruta correcta en tu html.
 
 ```
-<link rel="stylesheet" href="path-to-cardify.css">
+<link rel="stylesheet" href="path-to-main.css">
 ```
 
-3. Agrega el archivo cardify.js a tu carpeta js, escribiendo la ruta correcta en tu html.
+3. Agrega el archivo index.js a tu carpeta js, escribiendo la ruta correcta en tu html.
 
 ```
-<script src="path-to-cardify.js"></script>
+<script src="path-to-index.js"></script>
 ```
 
 4. Agrega un container en tu html con la clase "imgwrap"
@@ -41,29 +41,9 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 <div class="imgwrap"><img src="path-to-image.jpg" alt="my image"></div>
 ```
 
-## Global (navegador)
-
-1. Agrega jQuery a tu proyecto
-
-```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-```
-
-2. Agrega los links de CDN en tu proyecto.
-
-```
-<link rel="stylesheet" href="https://cdn.rawgit.com/adgalaz/cardify/heidi/assets/css/cardify.css">
-```
-
-```
-<script src="https://cdn.rawgit.com/adgalaz/cardify/heidi/src/cardify.js"></script>
-```
-
 # Uso
 
-* El usuario puede instalar el plugin de dos maneras. 
-- De forma local descargando los archivos cardify.css y cardify.js directamente desde github y agregandolas a sus carpetas de proyecto css y js. 
-- De forma global puede hacerlo a traves de CDN agregando a su proyecto el link y script que corresponden.
+* El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js. 
 
 ```
 <!DOCTYPE html>
@@ -73,8 +53,8 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
   <title>Your web</title>
-  <!--add cardify.css file-->
-  <link rel="stylesheet" href="path-to-cardify.css">
+  <!--add main.css file-->
+  <link rel="stylesheet" href="path-to-main.css">
 </head>
 
 <body>
@@ -89,10 +69,10 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
       </div>
     </div>
 
-  <!--add jQuery and cardify.js files-->
+  <!--add jQuery and index.js files-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="path-to-cardify.js"></script>
-
+  <script src="path-to-index.js"></script>
+  
 </body>
 
 </html>
