@@ -1,6 +1,6 @@
 # Proyecto Cardify2.0
 
-Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tus imagenes. Este plugin busca todas las imágenes que se encuentran dentro de un contenedor y las reemplaza con un nuevo elemento ```<figure>``` que contiene la/s imagen/es (```<img>```), así como un ```<figcaption>``` con el texto del atributo "alt" de la imagen.
+Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tus imagenes. Este plugin busca todas las imágenes con clase (```imgCardify```) dentro de un contenedor y las reemplaza con un nuevo elemento ```<figure>``` que contiene la/s imagen/es (```<img>```), así como un ```<figcaption>``` con el texto del atributo "alt" de la imagen.
 
 # Requerimientos Técnicos
 
@@ -38,12 +38,18 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 4. Agrega un container en tu html con la clase "imgwrap"
 
 ```
-<div class="imgwrap"><img src="path-to-image.jpg" alt="my image"></div>
+<div class="imgwrap"><img class="imgCardify" src="path-to-image.jpg" alt="my image"></div>
+```
+
+5. Agrega imagenes en tu html con la clase "imgCardify"
+
+```
+<div class="imgwrap"><img class="imgCardify" src="path-to-image.jpg" alt="my image"></div>
 ```
 
 # Uso
 
-* El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js. 
+* El usuario puede instalar el plugin de manera local. Para ello, puede hacerlo descargando los archivos main.css e index.js directamente desde github y agregandolas a sus carpetas de proyecto css y js.
 
 ```
 <!DOCTYPE html>
@@ -64,7 +70,7 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
       <div class="row imgwrap">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <!--add your image file-->
-          <img class="img-fluid" src="path-to-image.jpg" alt="My Image">
+          <img class="img-fluid imgCardify" src="path-to-image.jpg" alt="My Image">
         </div>
       </div>
     </div>
