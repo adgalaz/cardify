@@ -2,6 +2,10 @@
 
 Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tus imagenes. Este plugin busca todas las imágenes con clase (```imgCardify```) dentro de un contenedor y las reemplaza con un nuevo elemento ```<figure>``` que contiene la/s imagen/es (```<img>```), así como un ```<figcaption>``` con el texto del atributo "alt" de la imagen.
 
+## Vista Previa
+
+![Vista Previa](https://i.imgur.com/hWFpy2E.png)
+
 # Requerimientos Técnicos
 
 ## Dependencias de Producción
@@ -91,3 +95,9 @@ Cardify2.0 es un complemento de jQuery que agrega un simple efecto de hover a tu
 # Licencia
 
 * ISC License
+
+# Desarrollado para
+
+Laboratoria
+
+***
